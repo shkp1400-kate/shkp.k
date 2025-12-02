@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Dashboard</h1>
+    <button id="theme-toggle">Theme</button>
+  </header>
+
+  <section class="top-bar">
+    <div id="time" class="clock">00:00:00</div>
+    <div id="weather" class="weather">Loading weather...</div>
+  </section>
+
+  <section class="tasks-section">
+    <h2>Tasks</h2>
+    <div class="task-inputs">
+      <input type="text" id="task-input" placeholder="Enter a task">
+      <select id="task-category">
+        <option value="Work">Work</option>
+        <option value="Study">Study</option>
+        <option value="Home">Home</option>
+      </select>
+      <button id="add-task">Add</button>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="active">Active</button>
+      <button class="filter-btn" data-filter="completed">Completed</button>
+    </div>
+
+    <ul id="task-list"></ul>
+  </section>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+
+
+
+
+ 
+
+
